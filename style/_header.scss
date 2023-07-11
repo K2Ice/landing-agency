@@ -1,0 +1,110 @@
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (max-width: 1600px) {
+    margin: 0 20px;
+  }
+
+  .btn-icon {
+    display: none;
+    font-size: 30px;
+    @media (max-width: 800px) {
+      justify-self: start;
+      display: block;
+    }
+  }
+
+  .list-menu {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+
+    @media (max-width: 800px) {
+      display: none;
+      grid-column: 1 / -1;
+      grid-row: 2;
+      text-align: center;
+
+      &.active {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+
+    .menu-item {
+      min-width: max-content;
+    }
+
+    .menu-item:nth-child(1) {
+      position: relative;
+      font-weight: 600;
+
+      &::after {
+        width: 50%;
+        height: 2px;
+        content: "";
+        margin-top: -1px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fdc021;
+
+        @media (max-width: 800px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .box-logo {
+    min-width: 200px;
+
+    @media (max-width: 400px) {
+      min-width: auto;
+    }
+
+    .text-logo {
+      font-family: "Playfair Display";
+      font-size: 24px;
+      font-weight: 900;
+      text-align: center;
+
+      @media (max-width: 480px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .container-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+
+    .box-icon-rotated {
+      padding: 0 3px;
+    }
+
+    .link-icon {
+      display: block;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 30px;
+      transform: rotate(30deg);
+      .icon {
+        transform: rotate(-30deg);
+      }
+
+      @media (max-width: 480px) {
+        padding: 6px;
+      }
+    }
+  }
+}
+
+.header {
+  margin-bottom: min(10%, 150px);
+}

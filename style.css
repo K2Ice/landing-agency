@@ -1,1 +1,183 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+* {
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #331b3b;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.img-bg-pink {
+  position: absolute;
+  top: -15%;
+  right: -15%;
+  width: 50%;
+  max-height: 950px;
+}
+@media (max-width: 1200px) {
+  .img-bg-pink {
+    top: -150px;
+  }
+}
+@media (max-width: 1059px) {
+  .img-bg-pink {
+    top: -5%;
+  }
+}
+@media (max-width: 959px) {
+  .img-bg-pink {
+    top: -3%;
+  }
+}
+@media (max-width: 860px) {
+  .img-bg-pink {
+    top: -4%;
+  }
+}
+@media (max-width: 780px) {
+  .img-bg-pink {
+    top: -3%;
+  }
+}
+@media (max-width: 660px) {
+  .img-bg-pink {
+    transform: scale(1.1);
+    top: -2%;
+  }
+}
+@media (max-width: 320px) {
+  .img-bg-pink {
+    width: 220px;
+    height: 250px;
+  }
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 1600px) {
+  .nav {
+    margin: 0 20px;
+  }
+}
+.nav .btn-icon {
+  display: none;
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+  .nav .btn-icon {
+    justify-self: start;
+    display: block;
+  }
+}
+.nav .list-menu {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+}
+@media (max-width: 800px) {
+  .nav .list-menu {
+    display: none;
+    grid-column: 1/-1;
+    grid-row: 2;
+    text-align: center;
+  }
+  .nav .list-menu.active {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+.nav .list-menu .menu-item {
+  min-width: max-content;
+}
+.nav .list-menu .menu-item:nth-child(1) {
+  position: relative;
+  font-weight: 600;
+}
+.nav .list-menu .menu-item:nth-child(1)::after {
+  width: 50%;
+  height: 2px;
+  content: "";
+  margin-top: -1px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fdc021;
+}
+@media (max-width: 800px) {
+  .nav .list-menu .menu-item:nth-child(1)::after {
+    display: none;
+  }
+}
+.nav .box-logo {
+  min-width: 200px;
+}
+@media (max-width: 400px) {
+  .nav .box-logo {
+    min-width: auto;
+  }
+}
+.nav .box-logo .text-logo {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .nav .box-logo .text-logo {
+    font-size: 20px;
+  }
+}
+.nav .container-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.nav .container-icons .box-icon-rotated {
+  padding: 0 3px;
+}
+.nav .container-icons .link-icon {
+  display: block;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  transform: rotate(30deg);
+}
+.nav .container-icons .link-icon .icon {
+  transform: rotate(-30deg);
+}
+@media (max-width: 480px) {
+  .nav .container-icons .link-icon {
+    padding: 6px;
+  }
+}
+
+.header {
+  margin-bottom: min(10%, 150px);
+}/*# sourceMappingURL=style.css.map */
