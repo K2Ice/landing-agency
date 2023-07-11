@@ -919,4 +919,97 @@ body {
   height: 35px;
   border-radius: 50%;
   border: 2px solid black;
+}
+
+.section-testimonials {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+@media (max-width: 1600px) {
+  .section-testimonials {
+    margin: 0 20px;
+  }
+}
+.section-testimonials .box-header-testimonials {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-testimonials .box-header-testimonials .heading-testimonials {
+  font-size: 48px;
+  line-height: 1;
+}
+.section-testimonials .box-header-testimonials .heading-testimonials .text-bold {
+  font-weight: 700;
+}
+.section-testimonials .box-header-testimonials .heading-testimonials .text-light {
+  font-weight: 300;
+}
+.section-testimonials .box-header-testimonials .heading-testimonials .text-underline {
+  position: relative;
+}
+.section-testimonials .box-header-testimonials .heading-testimonials .text-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 1px;
+  bottom: 20%;
+  background-color: #fdc021;
+  z-index: -1;
+}
+.section-testimonials .container-opinions {
+  display: flex;
+  gap: min(5%, 69px);
+  justify-content: center;
+  margin-bottom: 90px;
+}
+@media (max-width: 700px) {
+  .section-testimonials .container-opinions {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+.section-testimonials .container-opinions .box-opinion {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 25px 35px 40px 20px;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.08);
+}
+.section-testimonials .container-opinions .box-opinion .box-img-quote {
+  width: 64px;
+  height: 64px;
+}
+.section-testimonials .container-opinions .box-opinion .box-img-quote .img-quote {
+  max-height: 100%;
+  max-width: 100%;
+}
+.section-testimonials .container-opinions .box-opinion .box-text-opinion {
+  margin-left: 10px;
+}
+.section-testimonials .container-opinions .box-opinion .box-text-opinion .text-opinion {
+  font-size: 16px;
+  line-height: 2;
+}
+.section-testimonials .container-opinions .box-opinion .box-client-name {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-testimonials .container-opinions .box-opinion .box-client-name .hyphen-yellow {
+  width: 11px;
+  height: 2px;
+  background-color: rgb(253, 194, 33);
+}
+.section-testimonials .container-opinions .box-opinion .box-client-name .text-client-name {
+  font-weight: 600;
+}
+@media (max-width: 480px) {
+  .section-testimonials .container-opinions .box-opinion {
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
