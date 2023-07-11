@@ -514,8 +514,51 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="col-footer-text">
+          <h3 class="heading-footer">Dream Agency</h3>
+          <p class="text-footer">
+            Jeśli jesteś zainteresowany najnowszymi trendami z dziedziny
+            marketingu internetowego skorzystaj z formularza kontaktowego lub
+            zapisz się na nasz newsletter.
+          </p>
+          <p class="text-call">ZAPISZ SIĘ NA NEWSLETTER</p>
+          <div class="box-email">
+            <div class="box-input-email">
+              <input
+                id="input-email"
+                type="text"
+                placeholder="Podaj Email"
+                class="input-email"
+              />
+              <button id="btn-input-email" class="btn-input-email">
+                WYŚLIJ
+              </button>
+            </div>
+            <p id="error-email" class="error-email"></p>
+          </div>
+        </div>
+        <div class="col-footer-map">
+          <div class="box-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.7075508415055!2d-73.96310922423488!3d40.81241987137869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c256598d232339%3A0xda8b85263f93969e!2sBroadway%2C%20New%20York%2C%20NY%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1689118278077!5m2!1spl!2spl"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+              scrolling="no" marginheight="0" marginwidth="0" ></iframe
+            >
+          </div>
+        </div>
+      </div>
+      <div id="box-popup" class="box-popup">
+        <p class="text-popup">Zapisałeś Się Na Newsletter!</p>
+        <button id="btn-popup-close" class="btn-popup-close">OK</button>
+      </div>
+    </footer>
     <script src="sliderServices.js"></script>
     <script src="sliderExperts.js"></script>
     <script src="form.js"></script>
+    <script src="newsletter.js"></script>
   </body>
 </html>
