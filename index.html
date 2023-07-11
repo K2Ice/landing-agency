@@ -464,8 +464,58 @@
           </div>
         </div>
       </section>
+      <section class="section-contact-form">
+        <div class="container-form">
+          <h3 class="heading-form">Skontaktuj się z nami</h3>
+          <form class="form-contact" novalidate>
+            <div class="box-input">
+              <label class="label-contact">Imię i nazwisko</label>
+              <p id="textErrorName" class="text-error"></p>
+            </div>
+            <input class="input-form" id="name" type="text" name="name" />
+            <div class="box-input">
+              <label class="label-contact">Email</label>
+              <p id="textErrorEmail" class="text-error"></p>
+            </div>
+            <input class="input-form" id="email" name="email" type="email" />
+            <div class="box-input">
+              <label class="label-contact">Telefon</label>
+
+              <p id="textErrorPhone" class="text-error"></p>
+            </div>
+            <input class="input-form" id="phone" name="phone" type="text" />
+            <div class="box-select">
+              <select id="selectService" class="selectService">
+                <option value="">Wybierz usługę</option>
+                <option value="seo">SEO</option>
+                <option value="sem">SEM</option>
+                <option value="facebookAds">Facebook Ads</option>
+                <option value="facebookAds">Content Marketing</option>
+              </select>
+              <div class="box-icon-select">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p id="textErrorSelect" class="text-error-select"></p>
+            </div>
+            <div class="box-input">
+              <label class="label-contact">Wiadomość:</label>
+              <p id="textErrorMessage" class="text-error"></p>
+            </div>
+            <textarea
+              id="textAreaMessage"
+              class="textAreaMessage"
+              name="message"
+            ></textarea>
+            <button id="btnSubmit" class="btn-submit-contact" type="button">
+              Wyślij
+            </button>
+          </form>
+          <p id="textSendResult" class="textSendResult"></p>
+        </div>
+      </section>
     </main>
     <script src="sliderServices.js"></script>
     <script src="sliderExperts.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
